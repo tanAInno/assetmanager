@@ -1,0 +1,29 @@
+.delete-text {
+    font-size: 15px;
+}
+
+.delete-button-row {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.delete-confirm-button {
+    font-size: 14px;
+    width: 50%;
+    height: 28px;
+    line-height: 28px;
+    vertical-align: middle;
+    background: #BE1600;
+    color: white;
+}
+
+.delete-cancel-button {
+    font-size: 14px;
+    width: 50%;
+    height: 28px;
+    line-height: 28px;
+    vertical-align: middle;
+    background: white;
+    color: black;
+}

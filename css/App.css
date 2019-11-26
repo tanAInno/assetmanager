@@ -1,0 +1,177 @@
+body {
+    font-family: 'RSU'; 
+    background: #FFFFFF;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+input:focus {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+.app-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'RSU'; 
+}
+
+.app-banner {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(54,54,54,0.8729866946778712) 17%, rgba(107,106,106,0.7077205882352942) 40%);
+    border-bottom: 1.5px solid #222222;
+}
+
+.app-banner-text {
+    font-size: 30px;
+    margin-left: 3%;
+    color: white;
+}
+
+.app-banner-switch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 2.5%;
+}
+
+.app-banner-button {
+    width: 45%;
+    height: 40px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    font-size: 20px;
+    vertical-align: middle;
+    line-height: 39px;
+    font-family: 'RSU';
+}
+
+.app-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #FCFCFC;
+    height: 100vh;
+    align-items: center;
+}
+
+.app-table {
+    width: 95%;
+    border: 1px solid #BBBBBB;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.app-table-header {
+    background: #EEEEEE;
+    border-radius: 10px;
+    border-bottom: 1px solid #BBBBBB;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+}
+
+.app-table-header-text {
+    color: #1a1a1a;
+    font-size: 18px;
+    width: 10%;
+    text-align: center;
+}
+
+.app-table-row {
+    background: #FDFDFD;
+    border-bottom: 1px solid #BBBBBB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+}
+
+.app-table-row-text {
+    color: #262626;
+    font-size: 14px;
+    width: 10%;
+    text-align: center;
+}
+
+.app-table-row-group {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-table-row-button {
+    font-size: 12px;
+    width: 33.33%;
+    height: 25px;
+    font-family: 'RSU';
+    vertical-align: middle;
+    line-height: 25px;
+    background: #FDFDFD;
+    border: 1px solid #BBBBBB;
+}
+
+.app-search-row {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.app-search-box {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-search-header {
+    font-size: 14px;
+    margin-right: 2%;
+}
+
+.app-search-input {
+    font-size: 14px;
+    width: 70%;
+    height: 22px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 1%;
+}

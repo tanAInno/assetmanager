@@ -1,0 +1,31 @@
+.view-modal {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.view-modal-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.view-modal-box {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.view-modal-header {
+    font-size: 18px;
+    margin-left: 2.5%;
+    font-weight: bold;
+}
+
+.view-modal-text {
+    font-size: 15px;
+    margin-left: 3%;
+    color: #898989;
+}
