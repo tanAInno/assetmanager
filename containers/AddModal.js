@@ -32,7 +32,7 @@ class AddModal extends Component {
     }
 
     async addComputer(){
-        await axios.post("http://localhost:5000/api/computers/",{
+        await axios.post(route+"computers/",{
             location: this.state.location,
             name: this.state.name,
             owner: this.state.owner,

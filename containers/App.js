@@ -11,6 +11,7 @@ import ViewOtherModal from './ViewOtherModal'
 import EditOtherModal from './EditOtherModal'
 import AddModal from './AddModal'
 import AddOtherModal from './AddOtherModal'
+import route from '../api'
 
 const customStyles = {
     content: {
@@ -141,7 +142,7 @@ class App extends Component {
     }
 
     async getComputer() {
-        await axios.get("http://localhost:5000/api/computers/")
+        await axios.get(route+"/computers/")
             .then(response => {
                 this.setState({ computers: response.data.data })
                 this.setState({ computers_temp: response.data.data })
@@ -150,7 +151,7 @@ class App extends Component {
     }
 
     async getOther() {
-        await axios.get("http://localhost:5000/api/others/")
+        await axios.get(route+"others/")
             .then(response => {
                 this.setState({ computers: response.data.data })
                 this.setState({ computers_temp: response.data.data })
@@ -159,7 +160,7 @@ class App extends Component {
     }
 
     async viewComputer(id) {
-        await axios.get("http://localhost:5000/api/computer/" + id)
+        await axios.get(route+"computer/" + id)
             .then(response => {
                 this.setState({ viewComputer: response.data.data })
                 this.openViewModal()
@@ -167,7 +168,7 @@ class App extends Component {
     }
 
     async editComputer(id) {
-        await axios.get("http://localhost:5000/api/computer/" + id)
+        await axios.get(route+"computer/" + id)
             .then(response => {
                 this.setState({ viewComputer: response.data.data })
                 this.openEditModal()
@@ -175,7 +176,7 @@ class App extends Component {
     }
 
     async viewOther(id) {
-        await axios.get("http://localhost:5000/api/other/" + id)
+        await axios.get(route+"other/" + id)
             .then(response => {
                 this.setState({ viewComputer: response.data.data })
                 this.openViewOtherModal()
@@ -183,7 +184,7 @@ class App extends Component {
     }
 
     async editOther(id) {
-        await axios.get("http://localhost:5000/api/other/" + id)
+        await axios.get(route+"other/" + id)
             .then(response => {
                 this.setState({ viewComputer: response.data.data })
                 this.openEditOtherModal()
@@ -191,7 +192,7 @@ class App extends Component {
     }
 
     async deleteComputer(id) {
-        await axios.delete("http://localhost:5000/api/computer/" + id)
+        await axios.delete(route+"computer/" + id)
             .then(response => {
                 this.closeDelModal()
                 location.reload()
@@ -199,7 +200,7 @@ class App extends Component {
     }
 
     async deleteOther(id) {
-        await axios.delete("http://localhost:5000/api/other/" + id)
+        await axios.delete(route+"other/" + id)
             .then(response => {
                 this.closeDelOtherModal()
                 location.reload()

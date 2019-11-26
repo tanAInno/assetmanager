@@ -32,7 +32,7 @@ class EditModal extends Component {
     }
 
     async editComputer(){
-        await axios.put("http://localhost:5000/api/computer/" + this.state.id,{
+        await axios.put(route+"computer/" + this.state.id,{
             location: this.state.location,
             name: this.state.name,
             owner: this.state.owner,
