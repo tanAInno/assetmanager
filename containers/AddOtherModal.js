@@ -24,7 +24,7 @@ class AddOtherModal extends Component {
     }
 
     async addComputer(){
-        await axios.put(route+"other/" + this.state.id,{
+        await axios.post(route+"others",{
             location: this.state.location,
             adminpass: this.state.adminpass,
             name: this.state.name,
