@@ -339,8 +339,8 @@ class App extends Component {
                 </Modal>
                 <Modal
                     isOpen={this.state.addOtherIsOpen}
-                    onAfterOpen={() => this.afterOpenAddModal()}
-                    onRequestClose={() => this.closeAddModal()}
+                    onAfterOpen={() => this.afterOpenAddOtherModal()}
+                    onRequestClose={() => this.closeAddOtherModal()}
                     contentLabel="Add"
                     style={customStyles}
                 >
